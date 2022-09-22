@@ -39,17 +39,15 @@ const Hero = () => {
                 </ul>
                 
                 {showDropDown && 
-                <ul className='md:hidden absolute top-14 left-4 bg-white p-4 pt-0 space-y-3'>
+                <ul className='md:hidden absolute top-14 left-4 bg-white p-4 pt-0 space-y-3'>   
                     <li className='text-gray-800 text-md'>Inicio</li>
                     <li className='text-gray-800 text-md'>Que hacemos</li>
                     <li className='text-gray-800 text-md'>Como lo hacemos</li>
                     <li className='text-gray-800 text-md'>Portfolio</li>
                     <li className='text-gray-800 text-md'>Precios</li>
-                    <li className='text-gray-800 text-md bg-yellow-500 py-1 px-2 rounded-sm'>Contacto</li>
+                    <li className='text-gray-800 text-md bg-yellow-500 py-1 px-2 rounded-sm text-center'>Contacto</li>
                 </ul>
                 }
-
-
             </header>
             
 
@@ -76,7 +74,7 @@ const Hero = () => {
         <div className=' z-20 bg-gray-300 sm:bg-hero-md sm:bg-opacity-0 container sm:h-[360px] md:h-[434px] lg:bg-hero-lg lg:h-[578px] 
          xl:bg-hero-xl xl:h-[723px] 2xl:h-[850px] mx-auto bg-cover bg-center'></div>
 
-         <div className='container mx-auto flex justify-center items-center space-x-5 md:space-x-12 py-4'>
+         <div className='container mx-auto flex justify-center items-center space-x-5 md:space-x-12 py-4 pt-6'>
             <img className='h-6 md:h-8 lg:h-12 xl:h-14 2xl:h-20' src={firebaseLogo} alt="firebase logo"/>
             <img className='h-5 md:h-6 lg:h-10 xl:h-10 2xl:h-12' src={reactLogo} alt="react js logo"/>
             <img className='h-5 md:h-6 lg:h-11 xl:h-10 2xl:h-12' src={nodejsLogo} alt="node js logo"/>
