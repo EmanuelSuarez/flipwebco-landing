@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
 import typescriptLogo from '../../../img/ts-logo.svg'
 import firebaseLogo from '../../../img/firebase-logo.svg'
@@ -6,15 +6,22 @@ import reactLogo from '../../../img/react-logo.svg'
 import nodejsLogo from '../../../img/nodejs-logo.svg'
 
 const Hero = () => {
+    const [ showDropDown, setShowDropDown ] = useState(false);
+
+    const toggleDropdown = () => {
+        setShowDropDown(!showDropDown);
+    }
+
   return (
     <>
 
 
 
-        <div className='absolute top-0 left-0'>
+        <div className=' sm:absolute top-0 left-0'>
 
 
-            <header className='h-16 w-8/12 2xl:w-[1200px] mx-auto flex flex-col lg:flex-row items-center justify-between'>
+            <header className='h-16 w-8/12 2xl:w-[1200px] mx-auto flex md:flex-col lg:flex-row items-center justify-center md:justify-between'>
+                <button onClick={() => {toggleDropdown()}} className='md:hidden absolute top-4 left-6 text-3xl'>{showDropDown ? `x` : `=`}</button>
                 <Link to={'/'} className="flex items-center" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" version="1.1" viewBox="0 0 400 400">
                     <g fillRule="evenodd" stroke="none">
@@ -22,7 +29,7 @@ const Hero = () => {
                     </g>
                 </svg> <p className='text-xl text-yellow-500'>Flipwebco</p>
                 </Link>
-                <ul className='flex space-x-4 items-center mt-1 xl:space-x-8'>
+                <ul className='hidden md:flex space-x-4 items-center mt-1 xl:space-x-8'>
                     <li className='text-gray-800 text-sm'>Inicio</li>
                     <li className='text-gray-800 text-sm'>Que hacemos</li>
                     <li className='text-gray-800 text-sm'>Como lo hacemos</li>
@@ -30,10 +37,23 @@ const Hero = () => {
                     <li className='text-gray-800 text-sm'>Precios</li>
                     <li className='text-gray-800 text-sm bg-yellow-500 py-1 px-2 rounded-sm'>Contacto</li>
                 </ul>
+                
+                {showDropDown && 
+                <ul className='md:hidden absolute top-14 left-4 bg-white p-4 pt-0 space-y-3'>
+                    <li className='text-gray-800 text-md'>Inicio</li>
+                    <li className='text-gray-800 text-md'>Que hacemos</li>
+                    <li className='text-gray-800 text-md'>Como lo hacemos</li>
+                    <li className='text-gray-800 text-md'>Portfolio</li>
+                    <li className='text-gray-800 text-md'>Precios</li>
+                    <li className='text-gray-800 text-md bg-yellow-500 py-1 px-2 rounded-sm'>Contacto</li>
+                </ul>
+                }
+
+
             </header>
             
 
-            <main className='w-screen grid place-content-center sm:h-[296px] md:h-[370px] lg:h-[514px] xl:h-[659px] 2xl:h-[786px]' >
+            <main className='bg-gray-200 sm:bg-opacity-0 w-screen grid place-content-center sm:h-[296px] md:h-[370px] lg:h-[514px] xl:h-[659px] 2xl:h-[786px]' >
                 <div className='w-[350px] md:w-[400px] lg:w-[480px] xl:w-[600px] xl:pt-20 2xl:w-[720px] mx-auto p-8 flex flex-col space-y-2 md:space-y-4 lg:space-y-6'>
                     <h1 className='text-2xl lg:text-3xl xl:text-6xl text-center'>Desarrollamos la solucion <span className='text-yellow-500'>Perfecta</span> para tu negocio</h1>
                     <p className='text-center mx-auto xl:w-4/6 2xl:text-lg'>No usamos plantillas, ni plugins. Hacemos todo <span className='text-yellow-500'>A TU MEDIDA.</span>
@@ -56,11 +76,11 @@ const Hero = () => {
         <div className=' z-20 bg-gray-300 sm:bg-hero-md sm:bg-opacity-0 container sm:h-[360px] md:h-[434px] lg:bg-hero-lg lg:h-[578px] 
          xl:bg-hero-xl xl:h-[723px] 2xl:h-[850px] mx-auto bg-cover bg-center'></div>
 
-         <div className='container mx-auto flex justify-center space-x-12 py-8'>
-            <img className='sm:h-6 md:h-8 lg:h-12 xl:h-14 2xl:h-20' src={firebaseLogo} alt="firebase logo"/>
-            <img className='sm:h-6 md:h-8 lg:h-12 xl:h-14 2xl:h-20' src={reactLogo} alt="react js logo"/>
-            <img className='sm:h-6 md:h-8 lg:h-12 xl:h-14 2xl:h-20' src={nodejsLogo} alt="node js logo"/>
-            <img className='sm:h-6 md:h-8 lg:h-12 xl:h-14 2xl:h-20' src={typescriptLogo} alt="typescript logo"/>
+         <div className='container mx-auto flex justify-center items-center space-x-5 md:space-x-12 py-4'>
+            <img className='h-6 md:h-8 lg:h-12 xl:h-14 2xl:h-20' src={firebaseLogo} alt="firebase logo"/>
+            <img className='h-5 md:h-6 lg:h-10 xl:h-10 2xl:h-12' src={reactLogo} alt="react js logo"/>
+            <img className='h-5 md:h-6 lg:h-11 xl:h-10 2xl:h-12' src={nodejsLogo} alt="node js logo"/>
+            <img className='h-4 md:h-5 lg:h-8 xl:h-7 2xl:h-10' src={typescriptLogo} alt="typescript logo"/>
          </div>
         
     </>
