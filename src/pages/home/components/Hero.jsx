@@ -54,7 +54,7 @@ const Hero = () => {
             <main className='bg-gray-200 sm:bg-opacity-0 w-screen grid place-content-center sm:h-[296px] md:h-[370px] lg:h-[514px] xl:h-[659px] 2xl:h-[786px]' >
                 <div className='w-[350px] md:w-[400px] lg:w-[480px] xl:w-[600px] xl:pt-20 2xl:w-[720px] mx-auto p-8 flex flex-col space-y-2 md:space-y-4 lg:space-y-6'>
                     <h1 className='text-2xl lg:text-3xl xl:text-6xl text-center'>Desarrollamos la solucion <span className='text-yellow-500'>Perfecta</span> para tu negocio</h1>
-                    <p className='text-center mx-auto xl:w-4/6 2xl:text-lg'>No usamos plantillas, ni plugins. Hacemos todo <span className='text-yellow-500'>A TU MEDIDA.</span>
+                    <p className='text-center mx-auto xl:w-4/6 2xl:text-lg'>No usamos plantillas, ni plugins. Hacemos todo <span className='text-yellow-500'>A TU MEDIDA. </span>
                     <span className='hidden lg:inline'>Implementando las mejores tecnologias
                     y metodologias para transmitir al 100% el valor de tu marca </span> </p>
                     <div className='flex justify-around mx-auto items-center space-x-4'>
