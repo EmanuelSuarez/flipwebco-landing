@@ -4,7 +4,7 @@ import Tilt from 'react-parallax-tilt';
 const OurValueOffer = () => {
 
   return (
-      <div className='container mx-auto space-y-6'>
+      <div id='valueOffer' className='container mx-auto space-y-6'>
         <h2 className='text-center text-2xl md:text-4xl text-gray-800'> <small className='text-gray-600 uppercase'>QUE HACEMOS?</small> <br /> Llevamos tu idea a la realidad </h2>
         <Tilt scale={1.05} perspective={2000} className="[transform-style: preserve-3d]" >
 
@@ -26,7 +26,7 @@ const OurValueOffer = () => {
                     md:w-72 md:h-64 md:bottom-20 ' >
                         <h2 className='text-start text-sm md:text-xl' >Websites / Landing pages</h2>
                         <h4 className='text-start text-xs md:text-xl'>Un sitio web donde mostrar tu negocio y el valor que ofrece</h4>
-                        <a href="#pricing" className='text-center py-1 px-2 bg-yellow-500 text-xs md:text-xl' >Presupuesto gratis</a>
+                        <a href="#cta" className='text-center py-1 px-2 bg-yellow-500 text-xs md:text-xl' >Presupuesto gratis</a>
                     </div>
                 </div>
                 
@@ -50,7 +50,7 @@ const OurValueOffer = () => {
                     md:w-72 md:h-64 ' >
                         <h2 className='text-start text-sm md:text-xl' >E-Commerce</h2>
                         <h4 className='text-start text-sm md:text-xl'>Vende tus productos en una tienda hecha a medida</h4>
-                        <a href="#pricing" className='text-center py-1 px-2 bg-yellow-500 text-xs md:text-xl ' >Presupuesto gratis</a>
+                        <a href="#cta" className='text-center py-1 px-2 bg-yellow-500 text-xs md:text-xl ' >Presupuesto gratis</a>
                     </div>
 
                     {/* right card */}
@@ -58,7 +58,7 @@ const OurValueOffer = () => {
                     md:w-72 md:h-64' >
                         <h2 className='text-start text-sm md:text-xl' >Web Apps a medida</h2>
                         <h4 className='text-start text-sm md:text-xl'>Lo que sea, lo hacemos con las mejores tecnologias</h4>
-                        <a href="#pricing" className='text-center py-1 px-2 bg-yellow-500 text-xs md:text-xl' >Presupuesto gratis</a>
+                        <a href="#cta" className='text-center py-1 px-2 bg-yellow-500 text-xs md:text-xl' >Presupuesto gratis</a>
                     </div>
                 </div>
 

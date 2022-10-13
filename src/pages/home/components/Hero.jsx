@@ -30,22 +30,22 @@ const Hero = () => {
                 </svg> <p className='text-xl text-yellow-500'>Flipwebco</p>
                 </Link>
                 <ul className='hidden md:flex space-x-4 items-center mt-1 xl:space-x-8'>
-                    <li className='text-gray-800 text-sm'>Inicio</li>
-                    <li className='text-gray-800 text-sm'>Que hacemos</li>
-                    <li className='text-gray-800 text-sm'>Como lo hacemos</li>
-                    <li className='text-gray-800 text-sm'>Portfolio</li>
-                    <li className='text-gray-800 text-sm'>Precios</li>
-                    <li className='text-gray-800 text-sm bg-yellow-500 py-1 px-2 rounded-sm'>Contacto</li>
+                    <li className='text-gray-800 text-sm'><a href="https://flipwebco.com">Inicio</a></li>
+                    <li className='text-gray-800 text-sm'> <a href="#valueOffer">Que hacemos</a> </li>
+                    <li className='text-gray-800 text-sm'><a href="#roadmap">Como lo hacemos</a></li>
+                    {/* <li className='text-gray-800 text-sm'>Portfolio</li> */}
+                    {/* <li className='text-gray-800 text-sm'>Precios</li> */}
+                    <li className='text-gray-800 text-sm bg-yellow-500 py-1 px-2 rounded-sm'><a href="#cta">Contacto</a></li>
                 </ul>
                 
                 {showDropDown && 
                 <ul className='md:hidden absolute top-14 left-4 bg-white p-4 pt-0 space-y-3'>   
-                    <li className='text-gray-800 text-md'>Inicio</li>
-                    <li className='text-gray-800 text-md'>Que hacemos</li>
-                    <li className='text-gray-800 text-md'>Como lo hacemos</li>
-                    <li className='text-gray-800 text-md'>Portfolio</li>
-                    <li className='text-gray-800 text-md'>Precios</li>
-                    <li className='text-gray-800 text-md bg-yellow-500 py-1 px-2 rounded-sm text-center'>Contacto</li>
+                    <li className='text-gray-800 text-md'><a href="https://flipwebco.com">Inicio</a></li>
+                    <li className='text-gray-800 text-md'><a href="#valueOffer">Que hacemos</a></li>
+                    <li className='text-gray-800 text-md'><a href="#roadmap">Como lo hacemos</a></li>
+                    {/* <li className='text-gray-800 text-md'>Portfolio</li> */}
+                    {/* <li className='text-gray-800 text-md'>Precios</li> */}
+                    <li className='text-gray-800 text-md bg-yellow-500 py-1 px-2 rounded-sm text-center'><a href="#cta">Contacto</a></li>
                 </ul>
                 }
             </header>
@@ -58,8 +58,8 @@ const Hero = () => {
                     <span className='hidden lg:inline'>Implementando las mejores tecnologias
                     y metodologias para transmitir al 100% el valor de tu marca </span> </p>
                     <div className='flex justify-around mx-auto items-center space-x-4'>
-                        <a className='bg-yellow-500 py-1 px-2 2xl:py-2 2xl:px-4 rounded-md' href="#contact">Contactanos</a>
-                        <a className='underline' href="#portfolio">Nuestro trabajo</a>
+                        <a className='bg-yellow-500 py-1 px-2 2xl:py-2 2xl:px-4 rounded-md' href="#cta">Contactanos</a>
+                        {/* <a className='underline' href="#portfolio">Nuestro trabajo</a> */}
                     </div>
                 </div>
             </main>

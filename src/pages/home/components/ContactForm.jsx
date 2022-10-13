@@ -1,10 +1,40 @@
 import React from 'react'
+import { collection, addDoc } from "firebase/firestore";
+import db from '../../../setup/firebase'
 
 const ContactForm = () => {
+
+    const submitForm = async (e) => {
+        e.preventDefault();
+        const name = e.target[0].value;
+        const lastName = e.target[1].value;
+        const email = e.target[2].value;
+        const phone = e.target[3].value;
+        const message = e.target[4].value;
+        const payload = { name, lastName, email, phone, message };
+
+        
+        // Add a new document with a generated id.
+        const docRef = collection(db, "consultas")
+        await addDoc(docRef, payload)
+        console.log("Document written with ID: ", docRef.id);
+        // navigate(`/result-${result}`)
+
+
+
+        e.target[0].value = ''
+        e.target[1].value = ''
+        e.target[2].value = ''
+        e.target[3].value = ''
+        e.target[4].value = ''
+        alert("Mensaje Enviado Correctamente")
+
+    }
+
   return (
     <div className='container mx-auto grid place-content-center py-6'>
         <h4 className='text-center text-2xl md:text-4xl text-gray-800 mb-4 mt-6'> <small className='text-gray-600 uppercase'>Contactanos</small> <br /> Armamos tu presupuesto en el dia </h4>
-        <form action="submit"
+        <form action="submit" onSubmit={(e) => submitForm(e)}
         className='py-4 space-y-4'
         >
             <div className='space-y-4 

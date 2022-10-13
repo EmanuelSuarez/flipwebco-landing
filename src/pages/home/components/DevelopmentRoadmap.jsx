@@ -9,7 +9,7 @@ import followUp from "../../../img/seguimiento.webp"
 
 const DevelopmentRoadmap = () => {
   return (
-    <section className="text-gray-600 body-font pt-12">
+    <section id='roadmap' className="text-gray-600 body-font pt-12">
         <div className='text-center text-2xl md:text-4xl text-gray-800'>
             <h3 className='text-center text-2xl md:text-4xl text-gray-800'> <small className='text-gray-600 uppercase'>como lo hacemos?</small> <br />Esta es la forma en la que trabajamos</h3>
         </div>
