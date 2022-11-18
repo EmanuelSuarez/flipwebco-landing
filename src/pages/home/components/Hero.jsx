@@ -17,10 +17,10 @@ const Hero = () => {
 
 
 
-        <div className=' sm:absolute top-0 left-0'>
+        <div className=' sm:absolute top-0 left-0  '>
 
 
-            <header className='h-16 w-8/12 2xl:w-[1200px] mx-auto flex md:flex-col lg:flex-row items-center justify-center md:justify-between'>
+            <header className='h-16  w-8/12 2xl:w-[1200px] mx-auto flex md:flex-col lg:flex-row items-center justify-center md:justify-between'>
                 <button onClick={() => {toggleDropdown()}} className='md:hidden absolute top-4 left-6 text-3xl'>{showDropDown ? `x` : `=`}</button>
                 <Link to={'/'} className="flex items-center" >
                 <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" version="1.1" viewBox="0 0 400 400">
@@ -35,7 +35,7 @@ const Hero = () => {
                     <li className='text-gray-800 text-sm'><a href="#roadmap">Como lo hacemos</a></li>
                     {/* <li className='text-gray-800 text-sm'>Portfolio</li> */}
                     {/* <li className='text-gray-800 text-sm'>Precios</li> */}
-                    <li className='text-gray-800 text-sm bg-yellow-500 py-1 px-2 rounded-sm'><a href="#cta">Contacto</a></li>
+                    <li className='text-gray-800 text-sm bg-yellow-500 py-1 px-2 rounded-sm shadow-xl'><a href="#cta">Contacto</a></li>
                 </ul>
                 
                 {showDropDown && 
@@ -45,33 +45,33 @@ const Hero = () => {
                     <li className='text-gray-800 text-md'><a href="#roadmap">Como lo hacemos</a></li>
                     {/* <li className='text-gray-800 text-md'>Portfolio</li> */}
                     {/* <li className='text-gray-800 text-md'>Precios</li> */}
-                    <li className='text-gray-800 text-md bg-yellow-500 py-1 px-2 rounded-sm text-center'><a href="#cta">Contacto</a></li>
+                    <li className='text-gray-800 text-md bg-amber-400 py-1 px-2 rounded-sm text-center shadow-3xl'><a href="#cta">Contacto</a></li>
                 </ul>
                 }
             </header>
             
 
-            <main className='bg-gray-200 sm:bg-opacity-0 w-screen grid place-content-center sm:h-[296px] md:h-[370px] lg:h-[514px] xl:h-[659px] 2xl:h-[786px]' >
-                <div className='w-[350px] md:w-[400px] lg:w-[480px] xl:w-[600px] xl:pt-20 2xl:w-[720px] mx-auto p-8 flex flex-col space-y-2 md:space-y-4 lg:space-y-6'>
-                    <h1 className='text-2xl lg:text-3xl xl:text-6xl text-center'>Desarrollamos la solucion <span className='text-yellow-500'>Perfecta</span> para tu negocio</h1>
-                    <p className='text-center mx-auto xl:w-4/6 2xl:text-lg'>No usamos plantillas, ni plugins. Hacemos todo <span className='text-yellow-500'>A TU MEDIDA. </span>
+            <main className=' bg-hero-mobile bg-cover sm:bg-none w-screen grid place-content-center sm:h-[296px] md:h-[370px] lg:h-[514px] xl:h-[659px] 2xl:h-[786px]' >
+                <div className='w-[350px] md:shadow-[4px_3px_30px_2px_rgba(0.2,0.2,0.2,0.3)]  md:w-[400px] lg:w-[480px] xl:w-[600px] xl:pt-20 2xl:w-[720px] mx-auto p-8 flex flex-col space-y-2 md:space-y-4 lg:space-y-6'>
+                    <h1 className='text-2xl lg:text-3xl xl:text-6xl  text-center'>Desarrollamos la solucion <span className='text-amber-400'>Perfecta</span> para tu negocio</h1>
+                    <p className='text-center    mx-auto xl:w-4/6 2xl:text-lg'>Digitaliza tu empresa. Hacemos todo <span className='text-yellow-500'>A TU MEDIDA. </span>
                     <span className='hidden lg:inline'>Implementando las mejores tecnologias
                     y metodologias para transmitir al 100% el valor de tu marca </span> </p>
-                    <div className='flex justify-around mx-auto items-center space-x-4'>
-                        <a className='bg-yellow-500 py-1 px-2 2xl:py-2 2xl:px-4 rounded-md' href="#cta">Contactanos</a>
-                        {/* <a className='underline' href="#portfolio">Nuestro trabajo</a> */}
+                    <div className='flex justify-around mx-auto items-center space-x-4 hover:scale-125  ease-out duration-300  bg-amber-400  border-4 border-amber-400 rounded-xl shadow-[4px_3px_30px_2px_rgba(0.2,0.2,0.2,0.3)]'>
+                        <a className='bg-amber-400 py-1 px-2 2xl:py-2 2xl:px-4 font-medium rounded-lg   bg-amber-400' href="#cta">Contactanos</a>
                     </div>
                 </div>
             </main>
 
 
-        </div>
+        </div>      
 
 
 
 
         {/* Background */}
-        <div className=' z-20 bg-gray-300 sm:bg-hero-md sm:bg-opacity-0 container sm:h-[360px] md:h-[434px] lg:bg-hero-lg lg:h-[578px] 
+        <div className=' '>
+        <div className=' z-20   sm:bg-hero-md container sm:h-[360px] md:h-[434px] lg:bg-hero-lg lg:h-[578px] 
          xl:bg-hero-xl xl:h-[723px] 2xl:h-[850px] mx-auto bg-cover bg-center'></div>
 
          <div className='container mx-auto flex justify-center items-center space-x-5 md:space-x-12 py-4 pt-6 my-8'>
@@ -79,6 +79,8 @@ const Hero = () => {
             <img className='h-5 md:h-6 lg:h-10 xl:h-10 2xl:h-12' src={reactLogo} alt="react js logo"/>
             <img className='h-5 md:h-6 lg:h-11 xl:h-10 2xl:h-12' src={nodejsLogo} alt="node js logo"/>
             <img className='h-4 md:h-5 lg:h-8 xl:h-7 2xl:h-10' src={typescriptLogo} alt="typescript logo"/>
+         </div>
+
          </div>
         
     </>

@@ -16,7 +16,7 @@ const DevelopmentRoadmap = () => {
     <div className="container px-5 py-4 mx-auto flex flex-wrap">
       <div className="flex relative pt-10 pb-20 sm:items-center md:w-2/3 mx-auto">
         <div className="h-full w-6 absolute inset-0 flex items-center justify-center pt-[80px] sm:pt-[82px] md:pt-[120px] lg:pt-[82px]">
-          <div className="h-full w-1 bg-yellow-600 pointer-events-none"></div>
+          <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
         <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">1</div>
         <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
@@ -37,7 +37,7 @@ const DevelopmentRoadmap = () => {
       </div>
       <div className="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
         <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div className="h-full w-1 bg-yellow-600 pointer-events-none"></div>
+          <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
         <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">2</div>
         <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
@@ -58,7 +58,7 @@ const DevelopmentRoadmap = () => {
       </div>
       <div className="flex relative pb-20 sm:items-center md:w-2/3 mx-auto">
         <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div className="h-full w-1 bg-yellow-600 pointer-events-none"></div>
+          <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
         <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">3</div>
         <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
@@ -80,7 +80,7 @@ const DevelopmentRoadmap = () => {
   
       <div className="flex relative pb-24 sm:items-center md:w-2/3 mx-auto">
         <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div className="h-full w-1 bg-yellow-600 pointer-events-none"></div>
+          <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
         <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">4</div>
         <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
@@ -100,7 +100,7 @@ const DevelopmentRoadmap = () => {
   
     <div className="flex relative pb-24 sm:items-center md:w-2/3 mx-auto">
         <div className="h-full w-6 absolute inset-0 flex items-center justify-center">
-          <div className="h-full w-1 bg-yellow-600 pointer-events-none"></div>
+          <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
         <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">5</div>
         <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
@@ -121,7 +121,7 @@ const DevelopmentRoadmap = () => {
   
       <div className="flex relative pb-24 sm:items-center md:w-2/3 mx-auto">
         <div className="h-full w-6 absolute inset-0 flex items-center justify-center pb-[265px] sm:pb-[160px] md:pb-[150px] lg:pb-[160px]">
-          <div className="h-full w-1 bg-yellow-600 pointer-events-none"></div>
+          <div className="h-full w-1 bg-gray-200 pointer-events-none"></div>
         </div>
         <div className="flex-shrink-0 w-6 h-6 rounded-full mt-10 sm:mt-0 inline-flex items-center justify-center bg-yellow-500 text-white relative z-10 title-font font-medium text-sm">6</div>
         <div className="flex-grow md:pl-8 pl-6 flex sm:items-center items-start flex-col sm:flex-row">
