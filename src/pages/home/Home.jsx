@@ -20,7 +20,7 @@ const Home = () => {
         <DevelopmentRoadmap/>
         <Clients/>
         {/* <Portfolio/> */}
-        <CallToAction/>
+        {/* <CallToAction/> */}
         <ContactForm/>
         <Footer/>
     </>
